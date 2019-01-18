@@ -1,0 +1,178 @@
+/*first some universal styling things for convenience */
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+img, embed, object, video {
+    max-width: 100%;
+}
+body{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  margin: unset;
+
+}
+.content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+p {
+  padding: 2%;
+}
+/*then some specific stuff */
+#header {
+    float: top;
+    width: 100%;
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 450px)
+{
+  #header > .button, #header > .button > .hyperlink {
+    display:none;
+  } 
+}
+#name {align-self: center;}
+#person{
+  background-color: darkgrey;
+}
+
+#reason {
+  background-color:lightgray;
+}
+.caption{
+  position: relative;
+  left: 20px;
+  top: -10px;
+  font-size: .5em;
+  width: 100%;
+}
+/* Stuff from the Udacity slacker card project to use as parts of my website cards. Modified. */
+
+.card {
+  background-color: white;
+  width: 98%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin-top: 1%;
+  margin-bottom:1%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.siteimg{
+  height: auto;
+  max-width: 200px;
+  align-self: center;
+}
+
+/* Let's use some media queries! */
+
+@media screen and (min-width: 450px)
+{
+  .card {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 750px)
+{
+  .card {
+    width: 31%;
+  }
+}
+@media screen and (min-width: 1024px)
+{
+  .card {
+    width: 23%;
+  }
+}
+
+/*    */
+
+.card:hover{
+  box-shadow: 0px 5px 15px 0px rgba(153,153,153,0.5);
+}
+
+.title{
+  color: black;
+}
+
+div {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+/*
+.name {
+  padding-top: calc(475px * 0.40);
+  margin: 0px;
+}
+.status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 4px;
+
+  border-radius: 5px;
+  background-color: #60D156;
+}
+.title {
+  margin-top: 8px;
+}
+.middle {
+  height: 5%;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 0px 16px;
+}
+.time {
+  color: #444;
+  font-size: 0.8em;
+  padding-top: 0.2em;
+}
+.bottom {
+  height: 40%;
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+}*/
+.button {
+  width: 25%;
+  height: 32px;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  border: 0px;
+  background-color: white;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  padding: 5px;
+  min-width: 150px;
+}
+.button:hover {
+  background-color: darkgray;
+  color: white;
+}
+.spacer {
+  opacity:0;
+  width:100%;
+}
+#footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    width: 100%;
+    background-color: black;
+}
