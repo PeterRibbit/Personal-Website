@@ -109,40 +109,6 @@ div {
   flex-wrap: wrap;
 }
 
-/*
-.name {
-  padding-top: calc(475px * 0.40);
-  margin: 0px;
-}
-.status {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-left: 4px;
-
-  border-radius: 5px;
-  background-color: #60D156;
-}
-.title {
-  margin-top: 8px;
-}
-.middle {
-  height: 5%;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  padding: 0px 16px;
-}
-.time {
-  color: #444;
-  font-size: 0.8em;
-  padding-top: 0.2em;
-}
-.bottom {
-  height: 40%;
-  border-radius: 0px 0px 4px 4px;
-  border: 1px solid #ddd;
-  padding: 8px 16px;
-}*/
 .button {
   width: 25%;
   height: 32px;
